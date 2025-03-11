@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Knowledge Hub</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <script>
+        console.log("Car Knowledge Hub page is loading...");
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: rgb(255, 255, 255);
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        main {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body onload="console.log('Body loaded successfully')">
+    <header>
+        <h1>Welcome to Car Knowledge Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" onclick="console.log('Navigating to Home page')">Home</a></li>
+                <li><a href="about.html" onclick="console.log('Navigating to About Us page')">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Discover the World of Cars</h2>
+            <p>Explore information about different car models, their history, and technological advancements in the automotive industry.</p>
+            <script>console.log("Main section loaded");</script>
+        </section>
+        
+        <section>
+            <h2>Popular Car Brands</h2>
+            <ul>
+                <li onclick="console.log('Toyota selected')">Toyota</li>
+                <li onclick="console.log('Ford selected')">Ford</li>
+                <li onclick="console.log('BMW selected')">BMW</li>
+                <li onclick="console.log('Mercedes-Benz selected')">Mercedes-Benz</li>
+                <li onclick="console.log('Honda selected')">Honda</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Car Specifications Comparison</h2>
+            <table>
+                <tr>
+                    <th>Model</th>
+                    <th>Top Speed</th>
+                    <th>Horsepower</th>
+                    <th>Fuel Type</th>
+                </tr>
+                <tr>
+                    <td>Toyota Supra</td>
+                    <td>155 mph</td>
+                    <td>382 hp</td>
+                    <td>Petrol</td>
+                </tr>
+                <tr>
+                    <td>Ford Mustang</td>
+                    <td>180 mph</td>
+                    <td>450 hp</td>
+                    <td>Petrol</td>
+                </tr>
+                <tr>
+                    <td>BMW M3</td>
+                    <td>155 mph</td>
+                    <td>503 hp</td>
+                    <td>Petrol</td>
+                </tr>
+            </table>
+            <script>console.log("Car specifications table loaded");</script>
+        </section>
+        
+        <section>
+            <h2>Car of the Day</h2>
+            <img src="images/2023-bmw-m3-cs-first-drive-review.jpg" alt="A stylish sports car" width="100%" onerror="console.error('Car image failed to load')">
+            <p>The latest model of the BMW M3, known for its speed and luxury.</p>
+            <script>console.log("Car image section loaded");</script>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Car Knowledge Hub. All rights reserved.</p>
+        <script>console.log("Footer loaded successfully");</script>
+    </footer>
+</body>
+</html>
